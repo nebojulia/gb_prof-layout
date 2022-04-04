@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 html,
 body {
     height: 100%;
@@ -329,3 +330,364 @@ footer {
     padding: 8px 11px;
     margin-left: 7px;
 }
+=======
+:root {
+  --black-bkg: #222;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+.header {
+  background-color: var(--black-bkg);
+  /* background: #222222; */
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 231px;
+  min-height: 75px;
+}
+.header__wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav {
+  display: none;
+}
+.header__logo {
+  height: 38px;
+  margin-right: 41px;
+  width: 44px;
+}
+.header__search-icon {
+  height: 23px;
+  width: 32px;
+}
+.header__menu-list {
+  align-items: center;
+  display: flex;
+}
+.header__burger {
+  border: none;
+  background-color: transparent;
+}
+.header__link {
+  margin: 0 0 0 33px;
+}
+.content {
+  background: #f1e4e6;
+}
+.obverse {
+  display: flex;
+  flex-direction: flex;
+}
+.obverse-content {
+  display: flex;
+  margin: 290px 0 0 92px;
+}
+.obverse-borderline {
+  height: 92px;
+  width: 12px;
+}
+.obverse-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+.obverse-h1 {
+  color: #222222;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.obverse-p {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.obverse_p_style {
+  color: #f16d7f;
+}
+.sales {
+  background: #fff;
+  height: 100%;
+  padding: 65px 230px 96px;
+}
+.sales__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+}
+.sales__grid-item--women {
+  grid-column: 1;
+  grid-row: 1;
+}
+.sales__grid-item--men {
+  grid-column: 2;
+  grid-row: 1;
+}
+.sales__grid-item--kids {
+  grid-column: 3;
+  grid-row: 1;
+}
+.sales__grid-item--accesories {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+.sales__photo {
+  height: 100%;
+  width: 100%;
+}
+.sales__text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sales__item {
+  position: relative;
+}
+.sales__text-item {
+  left: 103px;
+  position: absolute;
+  top: 105px;
+}
+
+.sales__text-item--accesories {
+  left: 491px;
+  position: absolute;
+  top: 65px;
+}
+.sales__span {
+  color: #f16d7f;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: center;
+}
+.products {
+  background: #fff;
+  padding: 0 230px 48px;
+}
+.products__title {
+  color: #222222;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  margin-bottom: 6px;
+  margin: 0;
+  text-align: center;
+}
+.products__sub-title {
+  color: #9f9f9f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: 0;
+  text-align: center;
+}
+.products__item-link {
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.products__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 48px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+.products__item-img {
+  height: 100%;
+  width: 100%;
+}
+.products__item-title {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+.products__item-info {
+  padding: 25px 28px 20px 17px;
+}
+.products__item-text {
+  color: #5d5d5d;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  margin: 0;
+  padding-bottom: 18px;
+}
+.products__item-price {
+  color: #f16d7f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 0;
+}
+.button a {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 95px;
+  text-decoration: none;
+}
+.button__link {
+  background: #fff;
+  border: 1px solid #ff6a6a;
+  color: #f26376;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 0;
+  padding: 14px 38px;
+}
+.benefits {
+  background: #222224;
+  display: flex;
+  justify-content: space-between;
+  padding: 103px 203px;
+}
+.benefits__item {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.benefits__img {
+  align-self: center;
+  height: 42px;
+  width: 33px;
+}
+.benefits__h2 {
+  align-self: center;
+  color: #fbfbfb;
+  font-size: 19.96px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.benefits__text {
+  align-self: center;
+  color: #fbfbfb;
+  font-size: 13.972px;
+  font-weight: 300;
+  line-height: 17px;
+  max-width: 360px;
+  text-align: center;
+}
+.subscribe {
+  background-image: url("img/footer-cover.jpg");
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  padding: 87px 230px 126px;
+  width: 100%;
+}
+.subscribe-feedback {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.feedback-img {
+  height: 96px;
+  margin-bottom: 30px;
+  width: 96px;
+}
+.feedback-blockquote {
+  color: #222224;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.subscribe-header {
+  color: #222224;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.672;
+  margin: 0;
+  padding-bottom: 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.subscribe-input {
+  margin-right: 104px;
+}
+.subscribe-text {
+  color: #222224;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  padding-bottom: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+input {
+  background: #e1e1e1;
+  border-radius: 30px 0 0 30px;
+  border: none;
+  height: 49px;
+  padding: 14px 64px 12px 22px;
+}
+.subscribe-button {
+  background: #f16d7f;
+  border-radius: 0 30px 30px 0;
+  display: inline;
+  height: 49px;
+  padding: 14px 22px 12px 14px;
+}
+.subscribe-link {
+  color: #fff;
+  text-decoration: none;
+}
+.footer {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 230px;
+}
+.footer__rights {
+  color: #fbfbfb;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.footer__socials {
+  align-self: center;
+}
+.footer__socials-button {
+  background: #fff;
+  margin-left: 7px;
+  padding: 8px 11px;
+}
+>>>>>>> Stashed changes
