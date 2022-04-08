@@ -82,8 +82,8 @@
             <div class="obverse-content">
                 <img class="obverse-borderline" src="img/borderline-header.jpg" alt="borderline">
                 <div class="obverse-text">
-                    <h1 class="obverse-h1">the brand</h1>
-                    <h2 class="obverse-p">of luxerious <span class="obverse_p_style">fashion</span></h2>
+                    <h1 class="obverse__header">the brand</h1>
+                    <h2 class="obverse-desc">of luxerious <span class="obverse_span_style">fashion</span></h2>
                 </div>
             </div>
         </section>
@@ -207,19 +207,16 @@
                 </li>
             </ul>
         </section>
-        <section class="button-form">
-            <div class="button">
-                <a href="#">
-                    <p class="button__link"> Browse All Product</p>
-                </a>
-            </div>
-        </section>
+        <div class="button">
+                <p class="button__link"> Browse All Product</p>
+        </div>
         <section class="benefits-section">
+            <h2 class="benefits-header--hidden">Benefits</h2>
             <ul class="benefits">
                 <li>
                     <div class="benefits__item">
                         <img class="benefits__img" src="img/truck.svg" alt="truck">
-                        <h3 class="benefits__h2">Free Delivery</h3>
+                        <h3 class="benefits__title">Free Delivery</h3>
                         <p class="benefits__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
                             with extensive models.
                         </p>
@@ -228,7 +225,7 @@
                 <li>
                     <div class="benefits__item">
                         <img class="benefits__img" src="img/sale.svg" alt="sale">
-                        <h3 class="benefits__h2">Sales & discounts</h3>
+                        <h3 class="benefits__title">Sales & discounts</h3>
                         <p class="benefits__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
                             with extensive models.
                         </p>
@@ -237,7 +234,7 @@
                 <li>
                     <div class="benefits__item">
                         <img class="benefits__img" src="img/crown.svg" alt="crown">
-                        <h3 class="benefits__h2">Quality assurance</h3>
+                        <h3 class="benefits__title">Quality assurance</h3>
                         <p class="benefits__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion
                             with extensive models.
                         </p>
@@ -254,7 +251,7 @@
                 </p>
             </div>
             <div class="subscribe-input">
-                <h2 class="subscribe-header">
+                <h2 class="subscribe-title">
                     subscribe
                 </h2>
                 <p class="subscribe-text">
@@ -262,7 +259,13 @@
                 </p>
                 <div class="subscribe-form">
                     <input type="text" placeholder="Enter Your Email">
-                    <p class="subscribe-button"><a class="content__subscribe-link" href="#">Subscribe</a></p>
+                    <button class="subscribe-button">
+                        <p class="content__subscribe-link">Subscribe</p>
+                    </button>
+                    
+                    <!--<p class="subscribe-button">
+                        <a class="content__subscribe-link" href="#">Subscribe</a>
+                    </p>-->
                 </div>
             </li>
             <li>
@@ -295,18 +298,25 @@
                 <input type="text" placeholder="Enter Your Email">
                 <p class="content__subscribe-button"><a class="content__subscribe-link" href="#">Subscribe</a></p>
             </div>
-        </div>
-    </section>
-</main>
-<footer class="footer">
-    <h2 class="footer__rights">© 2021 Brand All Rights Reserved.</h2>
-    <div class="footer__socials">
-        <a href="#" class="footer__socials-button"><img src="img/facebook.svg" alt="facebook"></a>
-        <a href="#" class="footer__socials-button"><img src="img/instagram.svg" alt="instagram"></a>
-        <a href="#" class="footer__socials-button"><img src="img/pinterest.svg" alt="pinterest"></a>
-        <a href="#" class="footer__socials-button"><img src="img/twitter.svg" alt="twitter"></a>
-    </div>
-</footer>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__rights">© 2021 Brand All Rights Reserved.</h2>
+        <ul class="footer__socials-list">
+            <li>
+                <a href="#" class="footer__socials-button"><img src="img/facebook.svg" alt="facebook"></a>
+            </li>
+            <li>
+                <a href="#" class="footer__socials-button"><img src="img/instagram.svg" alt="instagram"></a>
+            </li>
+            <li>
+                <a href="#" class="footer__socials-button"><img src="img/pinterest.svg" alt="pinterest"></a>
+            </li>
+            <li>
+                <a href="#" class="footer__socials-button"><img src="img/twitter.svg" alt="twitter"></a>
+            </li>
+        </ul>    
+    </footer>
 
 </body>
 
