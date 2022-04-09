@@ -11,6 +11,7 @@
   --products-white-bkg: #f8f8f8;
   --red-bkg: #ff6a6a;
   --white-bkg: #fff;
+  --loup: #fff;
 }
 
 html,
@@ -31,7 +32,7 @@ li {
   list-style-type: none;
 }
 
-input {
+.subscribe-form__input {
   background: var(--light-pink-bkg);
   border-radius: 30px 0 0 30px;
   border: none;
@@ -49,13 +50,18 @@ input {
   display: flex;
   justify-content: space-between;
   padding: 18px 231px;
-  min-height: 75px;
+  height: 75px;
 }
 
 .header__wrap {
   align-items: center;
   display: flex;
   justify-content: space-between;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .header__nav {
@@ -68,14 +74,41 @@ input {
   width: 44px;
 }
 
+/*Как применить эти стили к focus?*/
+.header__search-form:hover >.header__search-input {
+  align-items: center;
+  align-self: center;
+  background:var(--white-bkg);
+  border-radius: 20px;
+  color: var(--dark-gray-bkg);
+  display: flex;
+  height: 40px;
+  width: 300px;
+}
+
+.header__search-input {
+  display: none;
+  border: none;
+  margin: 0 10px;
+}
+
+.header__search-form {
+  display: flex;
+}
 .header__search-icon {
-  height: 23px;
-  width: 32px;
+  color: var(--loup);
+  margin-top: 5px;
 }
 
 .header__menu-list {
   align-items: center;
   display: flex;
+}
+
+.menu__item:hover {
+  background: var(--light-red-bkg);
+  border-radius: 20px;
+  padding: 6px;
 }
 
 .header__burger {
@@ -234,7 +267,14 @@ input {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  min-height: 450px;
+  width: 100%;
 }
+
+.products__item-link:hover .products__button,
+.products__item-link:hover .products__item--overlay:before {
+  display: block;
+} 
 
 .products__grid {
   display: grid;
@@ -242,11 +282,80 @@ input {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin-top: 48px;
+  padding-bottom: 48px;
 }
 
 .products__item-img {
-  height: 100%;
+  min-height: 390px;
   width: 100%;
+  background-repeat: no-repeat;
+}
+.products__item--overlay {
+  position: relative;
+}
+.products__item--overlay:before {
+  content: '';
+  width: 100%;
+  min-height: 390px;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+}
+.products__item--overlay:before {
+  display: none;
+}
+
+.products__item-img--man {
+  background-image: url(img/item-1.jpg);
+}
+.products__item-img--woman {
+  background-image: url(img/item-2.jpg);
+}
+.products__item-img--boy {
+  background-image: url(img/item-3.jpg);
+}
+.products__item-img--boys {
+  background-image: url(img/item-4.jpg);
+}
+.products__item-img--girl {
+  background-image: url(img/item-5.jpg);
+}
+.products__item-img--lady {
+  background-image: url(img/item-6.jpg);
+}
+
+.products__button {
+  position: absolute;
+  background: transparent;
+  color: var(--white-bkg);
+  top: 50%;  
+  left: 50%;
+  border: 2px solid var(--white-bkg);
+  transform: translate(-50%, -50%);
+  padding: 0 13px;
+}
+.products__button {
+  display: none;
+}
+
+.products__button:hover {
+  color: var(--dark-gray-bkg);
+  background: var(--white-bkg);
+  border: 2px solid var(--dark-gray-bkg);
+  opacity: 70%;
+}
+
+.products__button:focus,
+.products__button:active {
+  color: var(--dark-gray-bkg);
+  background: var(--light-red-bkg);
+  border: 2px solid var(--dark-gray-bkg);
+}
+
+.button__content {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }
 
 .products__item-title {
@@ -281,24 +390,30 @@ input {
 }
 
 .button {
-  background: var(--white-bkg);
   display: flex;
   justify-content: center;
-  padding-bottom: 95px;
   text-decoration: none;
+  background: var(--white-bkg);
 }
 
 .button__link {
-  background: var(--white-bkg);
   border: 1px solid var(--red-bkg);
   color: var(--light-red-bkg);
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
-  margin: 0;
+  margin: 0 auto;
   padding: 14px 38px;
+  background-color: var(--white-bkg);
+  
 }
 
+.button:hover {
+  color: var(--white-bkg);
+  background-color: var(--light-red-bkg);
+  cursor: pointer;
+  border-radius: 5px;
+}
 .benefits {
   background: var(--dark-gray-bkg);
   display: flex;
@@ -350,6 +465,11 @@ input {
   width: 100%;
 }
 
+.subscribe-form__input:hover {
+  border: 1px solid;
+  border-color: var(--light-pink-bkg);
+}
+
 .subscribe-feedback {
   align-items: center;
   display: flex;
@@ -396,12 +516,20 @@ input {
 }
 
 .subscribe-button {
-  background: var(--dark-pink-bkg);
+  background-color: var(--dark-pink-bkg);
   border-radius: 0 30px 30px 0;
   display: inline;
   height: 49px;
   padding: 14px 22px 12px 14px;
   border: none;
+}
+
+.subscribe-button:hover {
+  background: var(--red-bkg);
+}
+.subscribe-button:active {
+  background: var(--red-bkg);
+  border: 1px solid var(--gray-bkg);
 }
 
 .subscribe-link {
@@ -434,7 +562,31 @@ input {
   display: flex;
 }
 
+.socials-icon {
+  fill: black;
+  width: full;
+  height: full;
+  height: 15px;
+  width: 15px;
+}
+.socials-icon:active {
+  fill: var(--pink-bkg);
+}
+
 .footer__socials-button {
   background: var(--white-bkg);
   margin-left: 7px;
   padding: 8px 11px;
+  border-radius: 5px;
+}
+
+.footer__socials-button:hover {
+  background: var(--light-red-bkg);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.footer__socials-button:focus {
+  background: var(--red-bkg);
+  cursor: pointer;
+  border-radius: 10px;
+}
