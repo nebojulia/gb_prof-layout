@@ -188,6 +188,15 @@ a:hover svg {
   color: var(--nav-item-color);
 }
 
+.nav-item__item:hover {
+  color: var(--light-red-bkg);
+}
+
+.nav-item__item:active,
+.nav-item__item:focus {
+  color: var(--red-bkg);
+}
+
 .header__icon{
   height: 32px;
   width: 32px;
