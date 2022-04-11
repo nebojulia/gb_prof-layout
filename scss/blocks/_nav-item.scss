@@ -1,0 +1,29 @@
+.nav-item__title {
+    color: $dark-pink-bkg;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  
+  .nav-item__list li {
+    margin: 0 0 11px 20px;
+  }
+  
+  .nav-item__item {
+    color: $nav-item-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: none;
+  }
+  
+  .nav-item__item:hover {
+    color: $light-red-bkg;
+  }
+  
+  .nav-item__item:active,
+  .nav-item__item:focus {
+    color: $red-bkg;
+  }
