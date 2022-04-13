@@ -1,0 +1,42 @@
+.obverse {
+  background: $pink-bkg;
+  display: flex;
+  flex-direction: flex;
+}
+
+.obverse-content {
+  display: flex;
+  margin: 290px 0 0 92px;
+}
+
+.obverse-borderline {
+  height: 92px;
+  width: 12px;
+}
+
+.obverse-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.obverse__header {
+  color: $black-bkg;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.obverse-desc {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.obverse_span_style {
+  color: $dark-pink-bkg;
+}

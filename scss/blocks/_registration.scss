@@ -1,0 +1,121 @@
+.registration-header {
+  background-color: $registration-bcg;
+  padding: 59px 230px 60px 230px;
+}
+
+.registration-header-text {
+  color: $dark-pink-bkg;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.registration-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 230px 96px 230px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 128px;
+}
+
+.registration__legend {
+  color: $black-bkg;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.registration-form__name-form,
+.registration-form__login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__input {
+  border: 1px solid $registration-border-color;
+  color: $registration-input-placeholder;
+  font-size: 13px;
+  font-weight: 300;
+  height: 45px;
+  line-height: 16px;
+  margin-top: 20px;
+  padding: 13px 0 13px 17px;
+  width: 360px;
+}
+
+.registration-form__radio-form {
+  margin: 32px 0;
+}
+
+.registration__text {
+  color: $registration-input-placeholder;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  margin: 15px 0 39px 0;
+  min-height: 32px;
+  width: 360px;
+}
+
+.registration__button {
+  align-items: center;
+  background-color: $dark-pink-bkg;
+  border: none;
+  color: $white-bkg;
+  display: flex;
+  gap: 20px;
+  padding: 16px 24px 17px 29px;
+  text-transform: uppercase;
+}
+
+.registration__button:hover {
+  background: $red-bkg;
+}
+
+.registration__button:active,
+.registration__button:focus {
+  background: $red-bkg;
+  outline: 1px solid $nav-item-color;
+}
+
+.registration__info-header {
+  color: $black-bkg;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  margin: 0;
+  padding-bottom: 22px;
+  text-transform: uppercase;
+}
+
+.registration__info-text {
+  color: $black-bkg;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  margin: 0;
+  padding-bottom: 21px;
+}
+
+.registration-benefits-item {
+  color: var(--black-bkg);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  margin-bottom: 16px;
+}
+
+.registration-benefits-item {
+  list-style-type: none;
+}
+
+.registration-benefits-item::before {
+  content: url('img/list-benefits.svg');
+  margin-right: 23px;
+}
