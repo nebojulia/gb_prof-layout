@@ -1,13 +1,13 @@
 .footer {
-    background: $black-bkg;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 230px;
-  }
-  
-  .footer__rights {
-    color: $light-bkg;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-  }
+  background: $black-bkg;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 230px
+}
+
+.footer__rights {
+  color: $light-bkg;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}

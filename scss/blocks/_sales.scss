@@ -1,73 +1,73 @@
 .sales {
-    background: $white-bkg;
-    height: 100%;
-    padding: 65px 230px 96px;
-  }
-  
-  .sales__grid {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    width: 100%;
-  }
-  
-  .sales__grid-item--women {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  
-  .sales__grid-item--men {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  .sales__grid-item--kids {
-    grid-column: 3;
-    grid-row: 1;
-  }
-  
-  .sales__grid-item--accesories {
-    grid-column: 1/4;
-    grid-row: 2;
-    height: 180px;
-  }
-  
-  .sales__photo {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .sales__text {
-    color: $white-bkg;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  
-  .sales__item {
-    position: relative;
-  }
-  
-  .sales__text-item {
-    left: 103px;
-    position: absolute;
-    top: 105px;
-  }
-  
-  .sales__text-item--accesories {
-    left: 430px;
-    position: absolute;
-    top: 65px;
-  }
-  
-  .sales__span {
-    color: $dark-pink-bkg;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.8px;
-    text-align: center;
-  }
+  background: $white-bkg;
+  height: 100%;
+  padding: 65px 230px 96px;
+}
+
+.sales__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+}
+
+.sales__grid-item--women {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.sales__grid-item--men {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.sales__grid-item--kids {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.sales__grid-item--accesories {
+  grid-column: 1/4;
+  grid-row: 2;
+  height: 180px;
+}
+
+.sales__photo {
+  height: 100%;
+  width: 100%;
+}
+
+.sales__text {
+  color: $white-bkg;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sales__item {
+  position: relative;
+}
+
+.sales__text-item {
+  left: 103px;
+  position: absolute;
+  top: 105px;
+}
+
+.sales__text-item--accesories {
+  left: 430px;
+  position: absolute;
+  top: 65px;
+}
+
+.sales__span {
+  color: $dark-pink-bkg;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: center;
+}
