@@ -2,6 +2,13 @@
   background: $pink-bkg;
   display: flex;
   flex-direction: flex;
+
+  &__header {
+    @include font(48px, 58px, 900, normal);
+    color: $black-bkg;
+    margin: 0;
+    text-transform: uppercase;
+  }
 }
 
 .obverse-content {
@@ -20,23 +27,44 @@
   margin-left: 16px;
 }
 
-.obverse__header {
-  color: $black-bkg;
-  font-size: 48px;
-  font-weight: 900;
-  line-height: 58px;
-  margin: 0;
-  text-transform: uppercase;
-}
-
 .obverse-desc {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 38.4px;
+  @include font(32px, 38.4px, 700, normal);
   margin: 0;
   text-transform: uppercase;
+
+  &__style {
+    color: $dark-pink-bkg;
+  }
 }
 
-.obverse_span_style {
-  color: $dark-pink-bkg;
+@media (max-width: $desktop-width) {
+  .obverse {
+    height: 367px;
+
+    &__header {
+      @include font(44px, 53px, 900, normal);
+    }
+  }
+
+  .obverse-content {
+    display: flex;
+    margin: 138px 0 0 20px;
+  }
+
+  .obverse-desc {
+    @include font(26px, 33px, 700, normal);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .obverse {
+    &__img {
+      display: none;
+    }
+  }
+  
+  .obverse-content {
+    align-self: center;
+    margin: 0 auto;
+  }
 }

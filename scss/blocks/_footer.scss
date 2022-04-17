@@ -2,12 +2,29 @@
   background: $black-bkg;
   display: flex;
   justify-content: space-between;
-  padding: 30px 230px
+  padding: 30px 230px;
+  
+  &__rights {
+    @include font(16px, 19px, 400, normal);
+    color: $light-bkg;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
 }
 
-.footer__rights {
-  color: $light-bkg;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
+@media (max-width: $desktop-width) {
+  .footer {
+    padding: 24px 32px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .footer {
+    flex-direction: column-reverse;
+    
+    &__rights {
+      margin: 0 auto;
+    }
+  }
 }

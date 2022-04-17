@@ -2,72 +2,142 @@
   background: $white-bkg;
   height: 100%;
   padding: 65px 230px 96px;
+
+  &__grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.7fr);
+    width: 100%;
+  }
+  
+  &__grid-item--women {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  &__grid-item--men {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  &__grid-item--kids {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  &__grid-item--accesories {
+    grid-column: 1/4;
+    grid-row: 2;
+    height: 180px;
+  }
+  
+  &__photo {
+    height: 100%;
+    width: 100%;
+  }
+  
+  &__text {
+    @include font(16px, 19px, 400, normal);
+    color: $white-bkg;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  &__item {
+    position: relative;
+  }
+
+  &__item--accesories {
+    position: relative;
+  }
+  
+  &__text-item {
+    left: 103px;
+    position: absolute;
+    top: 105px;
+  }
+  
+  &__text-item--accesories {
+    left: 430px;
+    position: absolute;
+    top: 65px;
+  }
+  
+  &__span {
+    @include font(24px, 28.8px, 700, normal);
+    color: $dark-pink-bkg;
+    text-align: center;
+  }
 }
 
-.sales__grid {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  width: 100%;
+@media (max-width: $desktop-width) {
+  .sales {
+    padding: 20px 3%;
+
+    &__text-item {
+      left: 58px;
+      position: absolute;
+      top: 59px;
+    }
+
+    &__text-item--accesories {
+      left: 288px;
+      position: absolute;
+      top: 33px;
+      height: 116px;
+    }
+
+    &__grid {
+      gap: 20px;
+    }
+  }
 }
 
-.sales__grid-item--women {
-  grid-column: 1;
-  grid-row: 1;
-}
+@media (max-width: $tablet-width) {
+  .sales {
+    &__grid {
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+    }
 
-.sales__grid-item--men {
-  grid-column: 2;
-  grid-row: 1;
-}
+    &__grid-item--women {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    
+    &__grid-item--men {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    
+    &__grid-item--kids {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    
+    &__grid-item--accesories {
+      grid-column: 1;
+      grid-row: 4;
+    }
 
-.sales__grid-item--kids {
-  grid-column: 3;
-  grid-row: 1;
-}
+    &__item--accesories {
+      height: 111px;
+    }
 
-.sales__grid-item--accesories {
-  grid-column: 1/4;
-  grid-row: 2;
-  height: 180px;
-}
+    &__text-item--accesories {
+      left: 92px;
+      position: absolute;
+      top: 30px;
+    }
 
-.sales__photo {
-  height: 100%;
-  width: 100%;
-}
+    &__text {
+      @include font(12px, 15px, 400, normal);
+    }
 
-.sales__text {
-  color: $white-bkg;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.sales__item {
-  position: relative;
-}
-
-.sales__text-item {
-  left: 103px;
-  position: absolute;
-  top: 105px;
-}
-
-.sales__text-item--accesories {
-  left: 430px;
-  position: absolute;
-  top: 65px;
-}
-
-.sales__span {
-  color: $dark-pink-bkg;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28.8px;
-  text-align: center;
+    &__span {
+      @include font(20px, 25px, 700, normal);
+    }
+  }
 }
