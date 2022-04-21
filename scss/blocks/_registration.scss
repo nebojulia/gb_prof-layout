@@ -1,13 +1,73 @@
+.registration {
+  
+  &__legend {
+    @include font(16px, 19px, 300, normal);
+    color: $black-bkg;
+  }
+
+  &__input {
+    @include font(13px, 16px, 300, normal);
+    border: 1px solid $registration-border-color;
+    color: $registration-input-placeholder;
+    height: 45px;
+    margin-top: 20px;
+    padding: 13px 0 13px 17px;
+    width: 360px;
+  }
+
+  &__text {
+    @include font(13px, 16px, 300, normal);
+    color: $registration-input-placeholder;
+    margin: 15px 0 39px 0;
+    min-height: 32px;
+    width: 360px;
+  }
+  
+  &__button {
+    align-items: center;
+    background-color: $dark-pink-bkg;
+    border: none;
+    color: $white-bkg;
+    display: flex;
+    gap: 20px;
+    padding: 16px 24px 17px 29px;
+    text-transform: uppercase;
+  }
+  
+  &__button:hover {
+    background: $red-bkg;
+  }
+  
+  &__button:active,
+  .registration__button:focus {
+    background: $red-bkg;
+    outline: 1px solid $nav-item-color;
+  }
+  
+  &__info-header {
+    @include font(24px, 29px, 300, normal);
+    color: $black-bkg;
+    margin: 0;
+    padding-bottom: 22px;
+    text-transform: uppercase;
+  }
+  
+  &__info-text {
+    @include font(24px, 29px, 300, normal);
+    color: $black-bkg;
+    margin: 0;
+    padding-bottom: 21px;
+  }
+}
+
 .registration-header {
   background-color: $registration-bcg;
   padding: 59px 230px 60px 230px;
 }
 
 .registration-header-text {
+  @include font(24px, 29px, 400, normal);
   color: $dark-pink-bkg;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
   margin: 0;
   text-transform: uppercase;
 }
@@ -22,100 +82,26 @@
   display: flex;
   flex-direction: column;
   margin-right: 128px;
+
+  &__name-form,
+  &__login-form {
+    display: flex;
+    flex-direction: column;
 }
 
-.registration__legend {
-  color: $black-bkg;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 19px;
-}
-
-.registration-form__name-form,
-.registration-form__login-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.registration__input {
-  border: 1px solid $registration-border-color;
-  color: $registration-input-placeholder;
-  font-size: 13px;
-  font-weight: 300;
-  height: 45px;
-  line-height: 16px;
-  margin-top: 20px;
-  padding: 13px 0 13px 17px;
-  width: 360px;
-}
-
-.registration-form__radio-form {
-  margin: 32px 0;
-}
-
-.registration__text {
-  color: $registration-input-placeholder;
-  font-size: 13px;
-  font-weight: 300;
-  line-height: 16px;
-  margin: 15px 0 39px 0;
-  min-height: 32px;
-  width: 360px;
-}
-
-.registration__button {
-  align-items: center;
-  background-color: $dark-pink-bkg;
-  border: none;
-  color: $white-bkg;
-  display: flex;
-  gap: 20px;
-  padding: 16px 24px 17px 29px;
-  text-transform: uppercase;
-}
-
-.registration__button:hover {
-  background: $red-bkg;
-}
-
-.registration__button:active,
-.registration__button:focus {
-  background: $red-bkg;
-  outline: 1px solid $nav-item-color;
-}
-
-.registration__info-header {
-  color: $black-bkg;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  margin: 0;
-  padding-bottom: 22px;
-  text-transform: uppercase;
-}
-
-.registration__info-text {
-  color: $black-bkg;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  margin: 0;
-  padding-bottom: 21px;
+  &__radio-form {
+    margin: 32px 0;
+  }
 }
 
 .registration-benefits-item {
+  @include font(24px, 29px, 300, normal);
   color: var(--black-bkg);
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
   margin-bottom: 16px;
-}
-
-.registration-benefits-item {
   list-style-type: none;
 }
 
 .registration-benefits-item::before {
-  content: url('img/list-benefits.svg');
+  content: url('../img/list-benefits.svg');
   margin-right: 23px;
 }
