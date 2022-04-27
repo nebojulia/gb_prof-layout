@@ -1,0 +1,30 @@
+.info-wrap {
+
+    &__title {
+        color: $dark-pink-bkg;
+        @include font (14px, 16.8px, 300, normal);
+        text-transform: uppercase;
+    }
+    
+    &__subtitle {
+        color: $info-wrap-subtitle;
+        @include font (18px, 21.6px, 300, normal);
+        text-transform: uppercase;
+    }
+    
+    &__text {
+        color: $info-wrap-text;
+        @include font (14px, 16.8px, 300, normal);
+        margin: 48px 0 32px;
+    }
+    
+    &__price {
+        color: $info-wrap-price;
+        @include font (24px, 28.8px, 300, normal);
+        margin: 0;
+    }
+
+    &__line {
+        margin: 65px 0;
+    }
+}

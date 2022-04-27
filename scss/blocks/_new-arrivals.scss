@@ -1,0 +1,122 @@
+.new-arrivals {
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        background-color: $registration-bcg;
+        padding: 59px 230px 60px 230px;
+    }
+
+    &__breadcrumb {
+        display: flex;
+        list-style: none;
+        text-transform: uppercase;
+    }
+
+    &__breadcrumb li+li:before {
+        padding: 3px;
+        color: $breadcrumb-color;
+        content: "/";
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__breadcrumb &__link:hover {
+        color: $red-bkg;
+        text-decoration: underline;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $breadcrumb-color;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        padding-right: 3px;
+    }
+
+    &__link--focus {
+        color: $dark-pink-bkg;
+        font-weight: 700;
+    }
+
+    &__caroucel {
+        background: $carousel-bkg;
+    }
+
+    &__grid {
+        display: flex;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 128px 0;
+        justify-content: center;
+    }
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+        align-items: center;
+    }
+    
+    &__info-wrap {
+        background: $white-bkg;
+        max-width: 1141px;
+        min-height: 601px;
+        border: 1px solid $gray-bkg;
+        padding: 65px 250px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    &__button {
+        background: $white-bkg;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        margin: 48px auto;
+        padding: 14px 56px 14px 23px;
+        gap: 23px;
+        border: 2px solid $light-red-bkg;
+        
+        &:hover {
+            border-radius: 15px;
+        }
+    }
+    
+    &__button-text {
+        color: $light-red-bkg;
+        margin: auto 0;
+        @include font (16px, 19.2px, 400, normal);
+    }
+
+    &__button-icon {
+        fill: $light-red-bkg;
+    }
+
+    &__select-block {
+        display: flex;
+        justify-content: center;
+        gap: 23px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .new-arrivals {
+        &__header {
+        padding: 60px 16px;
+        }
+
+        &__product--hidden {
+            display: none;
+        }
+
+        &__grid {
+            display: flex;
+            gap: 16px;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 128px 19px;
+            justify-content: center;
+        }
+    }
+}
