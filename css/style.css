@@ -720,6 +720,13 @@ fieldset {
   }
 }
 
+.new-arrivals {
+  /* product page start */
+  /* product page end */
+  /* catalog page start */
+  /* catalog page end */
+}
+
 .new-arrivals__header {
   display: flex;
   justify-content: space-between;
@@ -821,6 +828,37 @@ fieldset {
   display: flex;
   justify-content: center;
   gap: 23px;
+}
+
+.new-arrivals__products-grid {
+  padding: 0 230px;
+}
+
+.new-arrivals__select-block--catalog {
+  margin: 0 auto;
+}
+
+.new-arrivals__grid-actions {
+  display: flex;
+  margin: 51px 0 65px;
+}
+
+.new-arrivals__filter {
+  align-items: center;
+  display: flex;
+}
+
+.new-arrivals__filter-text {
+  margin: 0 11px 0 0;
+  text-transform: uppercase;
+}
+
+.new-arrivals__filter-img {
+  fill: #222;
+}
+
+.new-arrivals__grid-pagination {
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
