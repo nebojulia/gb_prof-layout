@@ -861,6 +861,22 @@ fieldset {
   justify-content: center;
 }
 
+.new-arrivals__pagination-item {
+  color: #B1B1B1;
+}
+
+.new-arrivals__pagination-button-next path,
+.new-arrivals__pagination-button-prev path {
+  fill: #222;
+  align-items: center;
+}
+
+.new-arrivals__pagination-button-next svg,
+.new-arrivals__pagination-button-prev svg {
+  width: 20px;
+  height: 28px;
+}
+
 @media (max-width: 767px) {
   .new-arrivals__header {
     padding: 60px 16px;
