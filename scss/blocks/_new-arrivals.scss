@@ -137,6 +137,21 @@
         justify-content: center;
     }
     
+    &__pagination-item {
+        color: $registration-input-placeholder;
+    }
+
+    &__pagination-button-next path,
+    &__pagination-button-prev path {
+        fill: $black-bkg;
+        align-items: center;
+    }
+
+    &__pagination-button-next svg,
+    &__pagination-button-prev svg {
+        width: 20px;
+        height: 28px;
+    }
 /* catalog page end */
 }
 
